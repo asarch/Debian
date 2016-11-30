@@ -24,6 +24,7 @@ deb http://http.debian.net/debian jessie-backports main
 ## dpkg -i debian-multimedia-keyring_2010.12.26_all.deb
 ## wget http://deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2015.6.1_all.deb
 ## wget http://deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.3.7_all.deb
+## wget http://deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
 ##deb http://www.debian-multimedia.org wheezy main non-free
 ##deb http://www.debian-multimedia.org stable main non-free
 deb http://deb-multimedia.org stable main non-free
