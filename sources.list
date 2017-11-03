@@ -1,58 +1,21 @@
-##  Versiones:
-##
-##    - stable
-##    - testing
-##    - unstable
-##
-##  Nombres (http://www.debian.org/releases/):
-## 
-##    - stable: wheezy 7.x
-##    - testing: jessie 8.x
-
-## Repositorio de Nisamox
-##deb http://nisamox.fciencias.unam.mx/debian stable main contrib non-free
-##deb-src http://nisamox.fciencias.unam.mx/debian stable main contrib non-free
-
 ## Backports
-##deb http://www.backports.org/debian wheezy-backports main contrib non-free
-##deb http://backports.debian.org/debian-backports wheezy-backports main
-##deb http://http.debian.net/debian wheezy-backports main
-deb http://http.debian.net/debian jessie-backports main
+deb http://http.debian.net/debian stretch-backports main
 
 ## Repositorio de multimedia
-## wget http://www.debian-multimedia.org/pool/main/d/debian-multimedia-keyring/debian-multimedia-keyring_2010.12.26_all.deb
-## dpkg -i debian-multimedia-keyring_2010.12.26_all.deb
-## wget http://deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2015.6.1_all.deb
-## wget http://deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.3.7_all.deb
 ## wget http://deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
-##deb http://www.debian-multimedia.org wheezy main non-free
-##deb http://www.debian-multimedia.org stable main non-free
 deb http://deb-multimedia.org stable main non-free
-
-## Google Chrome
-## wget -q -O - http://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-##deb http://dl.google.com/linux/deb/ stable main
-
-## VirtualBox
-## wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add -
-##deb http://download.virtualbox.org/virtualbox/debian wheezy contrib non-free
-#deb http://download.virtualbox.org/virtualbox/debian jessie contrib non-free
-
-## From Javier Lopez
-##deb     http://www.cgarbs.de/stuff ./
-##deb-src http://www.cgarbs.de/stuff ./
 
 ## PostgreSQL
 ## From: https://wiki.postgresql.org/wiki/Apt
 ## wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
 ## aptitude -y install postgresql postgresql-client postgresql-contrib postgresql-doc pgAdmin3 phpPgAdmin
 ##deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main
-deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main
+deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main
 
 # From jelly@#debian.FN
-deb http://httpredir.debian.org/debian/ jessie main contrib non-free
-deb http://security.debian.org/ jessie/updates main contrib non-free
-deb http://httpredir.debian.org/debian/ jessie-updates main contrib non-free
+deb http://httpredir.debian.org/debian/ stretch main contrib non-free
+deb http://security.debian.org/ stretch/updates main contrib non-free
+deb http://httpredir.debian.org/debian/ stretch-updates main contrib non-free
 
 # From markybob@#debian.FN
-#deb http://security.debian.org/ jessie/updates main contrib non-free
+#deb http://security.debian.org/ stretch/updates main contrib non-free
