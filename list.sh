@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# Packages that I don't need but I want to have them
+
+# Kernel
+apt-get -t buster-backports install linux-image-amd64
+
+# Firmware
+apt-get install intel-microcode firmware-realtek firmware-misc-nonfree firmware-atheros
+
+# Tools
+apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome mc git lynx anjuta anjuta-extras bluefish bluefish-plugins geany geany-plugins gummi xmlcopyeditor glade texinfo groff dblatex htmldoc sbcl sbcl-doc sbcl-source abiword gnucash gnumeric audacious audacious-plugins mplayer ffmpeg texinfo gnumeric-plugins-extra sox libsox-fmt-all vorbis-tools mpg123 inkscape inkscape-open-symbols inkscape-tutorials maxima maxima-doc wxmaxima gnome-builder apt-file stella freeglut3 freeglut3-dev virt-manager qemu qemu-kvm aptitude emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts hexchat hexchat-plugins nasm sasm libsdl1.2-dev togl-demos rtorrent tmux amule amule-utils-gui squeak-vm etoys etoys-doc sugar-etoys-activity jigdo-file swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x gprolog gprolog-doc curl ntpdate libcanberra-gtk-module tree
+
+# Update database
+apt-file update
+
+# PostgreSQL
+apt-get install postgresql-13 postgresql-client-13 postgresql-doc-13 postgresql-server-dev-13
+
+# To build GNU Smalltalk
+apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison
+
+# LibreOffice Base
+apt-get install libreoffice-base libreoffice-base-drivers libreoffice-evolution libreoffice-report-builder libreoffice-script-provider-python libreoffice-script-provider-js libreoffice-sdbc-hsqldb libreoffice-sdbc-postgresql libreoffice-mysql-connector libreoffice-pdfimport
+
+# PgAdmin4, from: https://www.pgadmin.org/download/pgadmin-4-apt/
+curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+
+sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+
+apt-get install pgadmin4
+
+/usr/pgadmin4/bin/setup-web.sh
