@@ -18,7 +18,7 @@ apt-file update
 PG_VER=13 apt-get install postgresql-$PG_VER postgresql-client-$PG_VER postgresql-doc-$PG_VER postgresql-server-dev-$PG_VER
 
 # Python 3 venv (python3 -m venv alpha && source ~/alpha/bin/activate && pip --verbose install tg.devtools flask sqlacodegen psycopg2 django django-extensions)
-# source ~/alpha/bin/deactivate
+# deactivate
 apt-get install python3-venv python3-dev
 
 # To build GNU Smalltalk
