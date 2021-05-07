@@ -15,7 +15,11 @@ apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass
 apt-file update
 
 # PostgreSQL
-apt-get install postgresql-13 postgresql-client-13 postgresql-doc-13 postgresql-server-dev-13
+PG_VER=13 apt-get install postgresql-$PG_VER postgresql-client-$PG_VER postgresql-doc-$PG_VER postgresql-server-dev-$PG_VER
+
+# Python 3 venv (python3 -m venv alpha && source ~/alpha/bin/activate && pip --verbose install tg.devtools flask sqlacodegen psycopg2 django django-extensions)
+# source ~/alpha/bin/deactivate
+apt-get install python3-venv python3-dev
 
 # To build GNU Smalltalk
 apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison
