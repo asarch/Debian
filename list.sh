@@ -21,6 +21,9 @@ PG_VER=13 apt-get install postgresql-$PG_VER postgresql-client-$PG_VER postgresq
 # deactivate
 apt-get install python3-dev python3-venv
 
+# Python 3 SQLAlchemy
+apt-get install python3-sqlalchemy python3-sqlalchemy-utils python3-psycopg2
+
 # To build GNU Smalltalk
 apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison
 
