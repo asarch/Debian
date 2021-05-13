@@ -14,6 +14,10 @@ apt-get install amd64-microcode firmware-realtek firmware-amd-graphics firmware-
 # Tools
 apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome mc git hyperspec lynx blender anjuta anjuta-extras bluefish bluefish-plugins geany geany-plugins gummi xmlcopyeditor glade texinfo groff dblatex htmldoc sbcl sbcl-doc sbcl-source abiword gnucash gnumeric audacious audacious-plugins mplayer ffmpeg texinfo gnumeric-plugins-extra sox libsox-fmt-all vorbis-tools mpg123 inkscape inkscape-open-symbols inkscape-tutorials maxima maxima-doc wxmaxima gnome-builder apt-file stella freeglut3 freeglut3-dev virt-manager qemu qemu-kvm aptitude emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts hexchat hexchat-plugins nasm sasm libsdl1.2-dev togl-demos rtorrent tmux amule amule-utils-gui squeak-vm etoys etoys-doc sugar-etoys-activity jigdo-file swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x curl ntpdate libcanberra-gtk-module tree
 
+# Xen
+# To fix permissions: user=foo usermod -G vboxusers,libvirt,libvirt-qemu,libvirt-dnsmasq$( groups $user | awk -F: '{ print $2 }' | sed 's/ /,/g' ) $user
+apt-get install xen-linux-system xen-utils bridge-utils virt-manager
+
 # Update database
 apt-file update
 
