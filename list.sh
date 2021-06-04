@@ -34,6 +34,9 @@ apt-get install python3-sqlalchemy python3-sqlalchemy-utils python3-psycopg2
 # To build GNU Smalltalk
 apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison
 
+# Node.js + Express development tools
+apt-get install nodejs nodejs-doc npm node-express node-express-generator
+
 # LibreOffice Base
 apt-get install libreoffice-base libreoffice-base-drivers libreoffice-evolution libreoffice-report-builder libreoffice-script-provider-python libreoffice-script-provider-js libreoffice-sdbc-hsqldb libreoffice-sdbc-postgresql libreoffice-mysql-connector libreoffice-pdfimport
 
