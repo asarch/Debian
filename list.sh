@@ -18,6 +18,10 @@ apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass
 # To fix permissions: user=foo usermod -G vboxusers,libvirt,libvirt-qemu,libvirt-dnsmasq$( groups $user | awk -F: '{ print $2 }' | sed 's/ /,/g' ) $user
 apt-get install xen-linux-system xen-utils bridge-utils virt-manager
 
+# ReiserFS
+apt-get install reiserfsprogs # ReiserFS 3.x
+apt-get install reiser4progs  # ReiserFS 4.x
+
 # Update database
 apt-file update
 
