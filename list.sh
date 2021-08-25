@@ -32,6 +32,12 @@ apt-get install gnu-smalltalk gnu-smalltalk-browser gnu-smalltalk-doc
 # Solamente necesitas el binario para compilar la nueva versión
 apt-get install sbcl #sbcl-doc sbcl-source
 
+# Para imprimir con Epson L310
+apt-get install printer-driver-all printer-driver-cups-pdf foomatic-db-engine openprinting-ppds
+
+# Samba
+apt-get install samba
+
 # Obsoletos en bullseye
 #qemu-kvm libgtk2-perl-doc seed-webkit2 seed-webkit2-doc
 
