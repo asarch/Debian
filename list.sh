@@ -2,6 +2,21 @@
 
 # Packages that I don't need but I want to have them
 
+#  Particionado con UEFI (tambien sirve para Fedora y OpenSuse)
+#  Tienes que habilitar la opción de bootear con UEFI y hacerlo
+#  así desde la memoria para que puedas particionar con el programa
+#  de instalacion.
+#
+#  +---+
+#  |   |  BIOSBOOT - 1 MB
+#  +---+
+#  |   |  /boot/efi - 5.5 GB
+#  +---+
+#  |   |  /boot - 5.5 GB
+#  +---+
+#  |   |  LVM
+#  +---+
+
 # Kernel
 #apt-get -t buster-backports install linux-image-amd64
 apt-get -t bullseye-backports install linux-image-amd64
