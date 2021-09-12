@@ -45,7 +45,7 @@ apt-get install amd64-microcode firmware-realtek firmware-amd-graphics firmware-
 apt-get install intel-microcode firmware-misc-nonfree firmware-realtek firmware-b43-installer
 
 # Tools
-apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome mc git hyperspec lynx blender anjuta anjuta-extras bluefish bluefish-plugins geany geany-plugins gummi xmlcopyeditor glade texinfo groff dblatex htmldoc  abiword gnucash gnumeric audacious audacious-plugins mplayer ffmpeg texinfo gnumeric-plugins-extra sox libsox-fmt-all vorbis-tools mpg123 inkscape inkscape-open-symbols inkscape-tutorials maxima maxima-doc wxmaxima gnome-builder apt-file stella freeglut3 freeglut3-dev virt-manager qemu aptitude emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts hexchat hexchat-plugins nasm sasm libsdl1.2-dev togl-demos rtorrent tmux amule amule-utils-gui squeak-vm etoys etoys-doc sugar-etoys-activity jigdo-file swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x curl ntpdate libcanberra-gtk-module tree gimp gimp-gutenprint dia dia2code geeqie libgtk-3-doc libgtk2.0-doc libgtkmm-2.4-doc libgtkmm-3.0-doc docbook-xsl-ns hplip
+apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome mc git hyperspec lynx blender anjuta anjuta-extras bluefish bluefish-plugins geany geany-plugins gummi xmlcopyeditor glade texinfo groff dblatex htmldoc  abiword gnucash gnumeric audacious audacious-plugins mplayer ffmpeg texinfo gnumeric-plugins-extra sox libsox-fmt-all vorbis-tools mpg123 inkscape inkscape-open-symbols inkscape-tutorials maxima maxima-doc wxmaxima gnome-builder apt-file stella freeglut3 freeglut3-dev virt-manager qemu aptitude emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts hexchat hexchat-plugins nasm sasm libsdl1.2-dev togl-demos rtorrent tmux amule amule-utils-gui squeak-vm etoys etoys-doc sugar-etoys-activity jigdo-file swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x curl ntpdate libcanberra-gtk-module tree gimp gimp-gutenprint dia dia2code geeqie libgtk-3-doc libgtk2.0-doc libgtkmm-2.4-doc libgtkmm-3.0-doc docbook-xsl-ns hplip frozen-bubble
 
 # GNU Smalltalk
 apt-get install gnu-smalltalk gnu-smalltalk-browser gnu-smalltalk-doc
@@ -61,12 +61,12 @@ apt-get install printer-driver-all printer-driver-cups-pdf foomatic-db-engine op
 apt-get install samba
 
 # Obsoletos en bullseye
-#qemu-kvm libgtk2-perl-doc seed-webkit2 seed-webkit2-doc
+#qemu-kvm libgtk2-perl-doc seed-webkit2 seed-webkit2-doc xen-linux-system xen-utils bridge-utils virt-manager
 
 # Xen
 # To fix permissions: user=foo usermod -G vboxusers,libvirt,libvirt-qemu,libvirt-dnsmasq$( groups $user | awk -F: '{ print $2 }' | sed 's/ /,/g' ) $user
 # E.g: usermod -G libvirt,libvirt-qemu$( groups asarch | awk -F: '{ print $2 }' | sed 's/ /,/g' ) asarch
-apt-get install xen-linux-system xen-utils bridge-utils virt-manager
+apt-get install xen-hypervisor-4.14-amd64 xen-utils-4.14 xen-doc xen-tools
 
 # ReiserFS
 apt-get install reiserfsprogs # ReiserFS 3.x
