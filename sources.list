@@ -9,13 +9,11 @@ deb http://deb-multimedia.org stable main non-free
 ## From: https://wiki.postgresql.org/wiki/Apt
 ## wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
 ## aptitude -y install postgresql postgresql-client postgresql-contrib postgresql-doc pgAdmin3 phpPgAdmin
-##deb http://apt.postgresql.org/pub/repos/apt/ wheezy-pgdg main
-##deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main
 deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main
 
 # From jelly@#debian.FN
 deb http://httpredir.debian.org/debian/ bullseye main contrib non-free
-deb http://security.debian.org/ buster/updates main contrib non-free
+deb http://security.debian.org/ bullseye/updates main contrib non-free
 deb http://httpredir.debian.org/debian/ bullseye-updates main contrib non-free
 
 # From markybob@#debian.FN
