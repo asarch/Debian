@@ -85,7 +85,8 @@ apt-get install postgresql-$PG_VER postgresql-client-$PG_VER postgresql-doc-$PG_
 #
 # python3 -m venv alpha
 # source ~/alpha/bin/activate
-# pip --verbose install tg.devtools flask sqlacodegen psycopg2 django django-extensions
+# pip --verbose install tg.devtools flask flask-admin flask-sqlacodegen flask-sqlalchemy psycopg2 django django-extensions
+# flask-sqlacodegen 'orbm://username:password@hostname/table' > model.py
 # deactivate
 #
 apt-get install python3-dev python3-venv
