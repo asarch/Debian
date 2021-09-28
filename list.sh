@@ -101,7 +101,7 @@ apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake 
 apt-get install nodejs nodejs-doc npm node-express node-express-generator
 
 # LibreOffice Base
-apt-get install libreoffice-base libreoffice-base-drivers libreoffice-evolution libreoffice-report-builder libreoffice-script-provider-python libreoffice-script-provider-js libreoffice-sdbc-hsqldb libreoffice-sdbc-postgresql libreoffice-mysql-connector
+apt-get install libreoffice-base libreoffice-base-drivers libreoffice-evolution libreoffice-report-builder libreoffice-script-provider-python libreoffice-script-provider-js libreoffice-sdbc-hsqldb libreoffice-sdbc-postgresql libreoffice-mysql-connector openclipart openclipart-libreoffice openclipart-png openclipart-svg
 
 # Paquetes obsoletos con bullseye
 # libreoffice-pdfimport
