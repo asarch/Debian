@@ -45,7 +45,7 @@ apt-get install amd64-microcode firmware-realtek firmware-amd-graphics firmware-
 apt-get install intel-microcode firmware-misc-nonfree firmware-realtek firmware-b43-installer
 
 # Tools
-apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome mc git hyperspec lynx blender anjuta anjuta-extras bluefish bluefish-plugins geany geany-plugins gummi xmlcopyeditor glade texinfo groff dblatex htmldoc  abiword gnucash gnumeric audacious audacious-plugins mplayer ffmpeg texinfo gnumeric-plugins-extra sox libsox-fmt-all vorbis-tools mpg123 inkscape inkscape-open-symbols inkscape-tutorials maxima maxima-doc wxmaxima gnome-builder apt-file stella freeglut3 freeglut3-dev virt-manager qemu aptitude emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts hexchat hexchat-plugins nasm sasm libsdl1.2-dev togl-demos rtorrent tmux amule amule-utils-gui squeak-vm etoys etoys-doc sugar-etoys-activity jigdo-file swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x curl ntpdate libcanberra-gtk-module tree gimp gimp-gutenprint dia dia2code geeqie libgtk-3-doc libgtk2.0-doc libgtkmm-2.4-doc libgtkmm-3.0-doc docbook-xsl-ns hplip frozen-bubble
+apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome mc git hyperspec lynx blender anjuta anjuta-extras bluefish bluefish-plugins geany geany-plugins gummi xmlcopyeditor glade texinfo groff dblatex htmldoc  abiword gnucash gnumeric audacious audacious-plugins mplayer ffmpeg texinfo gnumeric-plugins-extra sox libsox-fmt-all vorbis-tools mpg123 inkscape inkscape-open-symbols inkscape-tutorials maxima maxima-doc wxmaxima gnome-builder apt-file stella freeglut3 freeglut3-dev virt-manager qemu aptitude emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts hexchat hexchat-plugins nasm sasm libsdl1.2-dev togl-demos rtorrent tmux amule amule-utils-gui squeak-vm etoys etoys-doc sugar-etoys-activity jigdo-file swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x curl ntpdate libcanberra-gtk-module tree gimp gimp-gutenprint dia dia2code geeqie libgtk-3-doc libgtk2.0-doc libgtkmm-2.4-doc libgtkmm-3.0-doc docbook-xsl-ns hplip frozen-bubble gnome-boxes
 
 # GNU Smalltalk
 apt-get install gnu-smalltalk gnu-smalltalk-browser gnu-smalltalk-doc
@@ -101,6 +101,9 @@ apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake 
 apt-get install nodejs nodejs-doc npm node-express node-express-generator
 
 # LibreOffice Base
+# dpkg -L openclipart-libreoffice: /usr/lib/libreoffice/share/gallery
+# dpkg -L openclipart-png: /usr/share/openclipart/png
+# dpkg -L openclipart-svg: /usr/share/openclipart/svg
 apt-get install libreoffice-base libreoffice-base-drivers libreoffice-evolution libreoffice-report-builder libreoffice-script-provider-python libreoffice-script-provider-js libreoffice-sdbc-hsqldb libreoffice-sdbc-postgresql libreoffice-mysql-connector openclipart openclipart-libreoffice openclipart-png openclipart-svg
 
 # Paquetes obsoletos con bullseye
