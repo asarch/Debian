@@ -79,7 +79,7 @@ apt-get install reiser4progs  # ReiserFS 4.x:
 apt-file update
 
 # PostgreSQL
-export PG_VER=13
+export PG_VER=14
 apt-get install postgresql-$PG_VER postgresql-client-$PG_VER postgresql-doc-$PG_VER postgresql-server-dev-$PG_VER
 
 # Paquetes para el desarrollo con Vulkan
