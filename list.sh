@@ -136,6 +136,7 @@ ln -vs /usr/share/doc/libgtkmm-2.4-doc/reference/html gtkmm2
 ln -vs /usr/share/doc/libgtkmm-3.0-doc/reference/html gtkmm3
 ln -vs /usr/share/doc/libglfw3-dev/html libglfw3-dev
 ln -vs /usr/share/gtk-doc/html/gulkan .
+ln -vs /usr/share/gtk-doc/html/gobject .
 
 # Habilitamos el soporte para Squeak
 cat <<END | sudo tee /etc/security/limits.d/squeak.conf
@@ -143,7 +144,7 @@ cat <<END | sudo tee /etc/security/limits.d/squeak.conf
 *      soft    rtprio  2
 END
 
-# Habilitamos el soporte para pharo
+# Habilitamos el soporte para Pharo
 cat <<END | sudo tee /etc/security/limits.d/pharo.conf
 *      hard    rtprio  2
 *      soft    rtprio  2
