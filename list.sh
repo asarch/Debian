@@ -45,11 +45,12 @@ apt-get install amd64-microcode firmware-realtek firmware-amd-graphics firmware-
 apt-get install intel-microcode firmware-misc-nonfree firmware-realtek firmware-b43-installer
 
 # Tools
-apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome mc git hyperspec lynx blender anjuta anjuta-extras bluefish bluefish-plugins geany geany-plugins gummi xmlcopyeditor glade texinfo groff dblatex htmldoc abiword gnucash gnumeric audacious audacious-plugins mplayer ffmpeg gnumeric-plugins-extra sox libsox-fmt-all vorbis-tools mpg123 inkscape inkscape-open-symbols inkscape-tutorials maxima maxima-doc wxmaxima gnome-builder apt-file stella freeglut3 freeglut3-dev virt-manager qemu aptitude emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts hexchat hexchat-plugins nasm sasm libsdl1.2-dev togl-demos rtorrent tmux amule amule-utils-gui squeak-vm etoys etoys-doc sugar-etoys-activity jigdo-file swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x curl ntpdate libcanberra-gtk-module tree gimp gimp-gutenprint dia dia2code geeqie libgtk-3-doc libgtk2.0-doc libgtkmm-2.4-doc libgtkmm-3.0-doc docbook-xsl-ns hplip frozen-bubble gnome-boxes alice sqlite3 sqlite3-doc sqlitebrowser phpliteadmin phpliteadmin-themes unrar youtubedl-gui rep rep-doc rep-gtk
+apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome mc git hyperspec lynx blender anjuta anjuta-extras bluefish bluefish-plugins geany geany-plugins gummi xmlcopyeditor glade texinfo groff dblatex htmldoc abiword gnucash gnumeric audacious audacious-plugins mplayer ffmpeg gnumeric-plugins-extra sox libsox-fmt-all vorbis-tools mpg123 inkscape inkscape-open-symbols inkscape-tutorials maxima maxima-doc wxmaxima gnome-builder apt-file stella freeglut3 freeglut3-dev virt-manager qemu aptitude emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts hexchat hexchat-plugins nasm sasm libsdl1.2-dev togl-demos rtorrent tmux amule amule-utils-gui squeak-vm etoys etoys-doc sugar-etoys-activity jigdo-file swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x curl ntpdate libcanberra-gtk-module tree gimp gimp-gutenprint dia dia2code geeqie libgtk-3-doc libgtk2.0-doc libgtkmm-2.4-doc libgtkmm-3.0-doc docbook-xsl-ns hplip frozen-bubble gnome-boxes alice sqlite3 sqlite3-doc sqlitebrowser phpliteadmin phpliteadmin-themes unrar youtubedl-gui rep rep-doc rep-gtk irssi irssi-plugin-otr irssi-plugin-robustirc irssi-plugin-xmpp irssi-scripts
 
 # GNU Smalltalk
-apt-get install gnu-smalltalk gnu-smalltalk-browser gnu-smalltalk-doc gnu-smalltalk-el
-apt-cache search smalltalk | awk '{print $1 }' | grep '\-gst' | xargs apt install
+# Mejor usa la version compilada
+#apt-get install gnu-smalltalk gnu-smalltalk-browser gnu-smalltalk-doc gnu-smalltalk-el
+#apt-cache search smalltalk | awk '{print $1 }' | grep '\-gst' | xargs apt install
 
 # SBCL
 # Solamente necesitas el binario para compilar la nueva versión
