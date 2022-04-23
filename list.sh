@@ -86,6 +86,9 @@ apt-get install postgresql-$PG_VER postgresql-client-$PG_VER postgresql-doc-$PG_
 # Paquetes para el desarrollo con Vulkan
 apt install vulkan-tools libgulkan-dev libgulkan-doc libgulkan-utils libglfw3-dev libglfw3 libglfw3-doc libglm-dev libcglm-doc
 
+# Lazarus
+apt install lazarus-ide-gtk2-2.0 lazarus-doc-2.0 lazarus-src-2.0 lazarus-2.0
+
 # Python 3 venv 
 #
 # python3 -m venv alpha
