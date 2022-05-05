@@ -131,7 +131,7 @@ apt-get install pgadmin4
 
 # Habilitamos la documentación local
 cd /var/www/html
-ln -vs /usr/share/doc/postgresql-doc-13/html postgresql
+ln -vs /usr/share/doc/postgresql-doc-14/html postgresql
 ln -vs /usr/share/doc/hyperspec .
 ln -vs /usr/share/gtk-doc/html/gdk2 .
 ln -vs /usr/share/gtk-doc/html/gtk2 .
