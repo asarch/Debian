@@ -83,6 +83,9 @@ apt-file update
 export PG_VER=14
 apt-get install postgresql-$PG_VER postgresql-client-$PG_VER postgresql-doc-$PG_VER postgresql-server-dev-$PG_VER
 
+# MariaDB
+apt install mariadb-backup mariadb-client mariadb-server phpmyadmin
+
 # Paquetes para el desarrollo con Vulkan
 apt install vulkan-tools libgulkan-dev libgulkan-doc libgulkan-utils libglfw3-dev libglfw3 libglfw3-doc libglm-dev libcglm-doc
 
