@@ -117,6 +117,10 @@ apt-get install nodejs nodejs-doc npm node-express node-express-generator
 # dpkg -L openclipart-svg: /usr/share/openclipart/svg
 apt-get install libreoffice-base libreoffice-base-drivers libreoffice-evolution libreoffice-report-builder libreoffice-script-provider-python libreoffice-script-provider-js libreoffice-sdbc-hsqldb libreoffice-sdbc-postgresql libreoffice-mysql-connector openclipart openclipart-libreoffice openclipart-png openclipart-svg
 
+# Utilerias para las bases de datos de Base
+# Para despachar a un archivo de Base como servidor:
+apt-get install hsqldb-utils libhsqldb-java libhsqldb-java-doc
+
 # Paquetes obsoletos con bullseye
 # libreoffice-pdfimport
 
