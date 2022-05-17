@@ -119,6 +119,12 @@ apt-get install libreoffice-base libreoffice-base-drivers libreoffice-evolution 
 
 # Utilerias para las bases de datos de Base
 # Para despachar a un archivo de Base como servidor:
+# java -cp /usr/share/java/hsqldb.jar org.hsqldb.server.Server --database.0 file:taco --dbname.0 taco
+#
+# Para usar la utileria:
+# java -cp /usr/share/java/hsqldb.jar org.hsqldb.util.DatabaseManagerSwing
+#
+# Usa esta direccion: jdbc:hsqldb:hsql://localhost/taco;default_schema=true
 apt-get install hsqldb-utils libhsqldb-java libhsqldb-java-doc
 
 # Paquetes obsoletos con bullseye
@@ -148,6 +154,7 @@ ln -vs /usr/share/doc/libgtkmm-3.0-doc/reference/html gtkmm3
 ln -vs /usr/share/doc/libglfw3-dev/html libglfw3-dev
 ln -vs /usr/share/gtk-doc/html/gulkan .
 ln -vs /usr/share/gtk-doc/html/gobject .
+ln -vs /usr/share/doc/libhsqldb-java/guide hsqldb
 
 # Habilitamos el soporte para Squeak
 cat <<END | sudo tee /etc/security/limits.d/squeak.conf
