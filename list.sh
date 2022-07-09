@@ -45,12 +45,39 @@ apt-get install amd64-microcode firmware-realtek firmware-amd-graphics firmware-
 apt-get install intel-microcode firmware-misc-nonfree firmware-realtek firmware-b43-installer
 
 # Tools
-apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome mc git hyperspec lynx blender anjuta anjuta-extras bluefish bluefish-plugins geany geany-plugins gummi xmlcopyeditor glade texinfo groff dblatex htmldoc abiword gnucash gnumeric audacious audacious-plugins mplayer ffmpeg gnumeric-plugins-extra sox libsox-fmt-all vorbis-tools mpg123 inkscape inkscape-open-symbols inkscape-tutorials maxima maxima-doc wxmaxima gnome-builder apt-file stella freeglut3 freeglut3-dev virt-manager qemu aptitude emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts hexchat hexchat-plugins nasm sasm libsdl1.2-dev togl-demos rtorrent tmux amule amule-utils-gui squeak-vm etoys etoys-doc sugar-etoys-activity jigdo-file swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x curl ntpdate libcanberra-gtk-module tree gimp gimp-gutenprint dia dia2code geeqie libgtk-3-doc libgtk2.0-doc libgtkmm-2.4-doc libgtkmm-3.0-doc docbook-xsl-ns hplip frozen-bubble gnome-boxes alice sqlite3 sqlite3-doc sqlitebrowser phpliteadmin phpliteadmin-themes unrar youtubedl-gui rep rep-doc rep-gtk irssi irssi-plugin-otr irssi-plugin-robustirc irssi-plugin-xmpp irssi-scripts gtk-3-examples gtk2.0-examples
+apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome mc git hyperspec lynx blender anjuta anjuta-extras bluefish bluefish-plugins geany geany-plugins gummi xmlcopyeditor glade texinfo groff dblatex htmldoc abiword gnucash gnumeric audacious audacious-plugins mplayer ffmpeg gnumeric-plugins-extra sox libsox-fmt-all vorbis-tools mpg123 inkscape inkscape-open-symbols inkscape-tutorials maxima maxima-doc wxmaxima gnome-builder apt-file stella freeglut3 freeglut3-dev virt-manager qemu aptitude emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts hexchat hexchat-plugins nasm sasm libsdl1.2-dev togl-demos rtorrent tmux amule amule-utils-gui squeak-vm etoys etoys-doc sugar-etoys-activity jigdo-file swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x curl ntpdate libcanberra-gtk-module tree gimp gimp-gutenprint dia dia2code geeqie libgtk-3-doc libgtk2.0-doc libgtkmm-2.4-doc libgtkmm-3.0-doc docbook-xsl-ns hplip frozen-bubble gnome-boxes alice sqlite3 sqlite3-doc sqlitebrowser phpliteadmin phpliteadmin-themes unrar youtubedl-gui rep rep-doc rep-gtk irssi irssi-plugin-otr irssi-plugin-robustirc irssi-plugin-xmpp irssi-scripts gtk-3-examples gtk2.0-examples ttf-mscorefonts-installer epiphany-browser
 
 # GNU Smalltalk
+
 # Mejor usa la version compilada
 #apt-get install gnu-smalltalk gnu-smalltalk-browser gnu-smalltalk-doc gnu-smalltalk-el
 #apt-cache search smalltalk | awk '{print $1 }' | grep '\-gst' | xargs apt install
+
+# To build GNU Smalltalk
+
+#!/bin/sh
+# Obtenemos el codigo fuente
+# git clone git://git.sv.gnu.org/smalltalk.git
+# Iniciamos la configuracion
+# cd smalltalk
+# Corregimos el problema del punto flotante:
+# export CFLAGS='-no-pie'
+# export LDFLAGS='-no-pie'
+# echo "Autoreconf"
+# echo
+# autoreconf -vi > _autoreconf.log 2>&1
+# echo "Configure"
+# echo
+#./configure --verbose --enable-gtk=yes --enable-glibtest --enable-threads=posix > _configure.log 2>&1
+# ./configure --verbose --enable-gtk=blox --enable-glibtest --enable-threads=posix > _configure.log 2>&1
+# echo "Compilation"
+# echo
+# make > _make.log 2>&1
+# echo "Checking"
+# echo
+# make check > _check.log 2>&1
+# make install > _instalacion.log 2>&1
+apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison
 
 # SBCL
 # Solamente necesitas el binario para compilar la nueva versión
@@ -92,6 +119,12 @@ apt install vulkan-tools libgulkan-dev libgulkan-doc libgulkan-utils libglfw3-de
 # Lazarus
 apt install lazarus-ide-gtk2-2.0 lazarus-doc-2.0 lazarus-src-2.0 lazarus-2.0
 
+# TCL
+apt install tkcon tcl8.6-doc tk8.6-doc tcl8.6-tdbc-postgres
+
+# Haskell
+apt install ghc ghc-doc haskell98-tutorial haskell-doc haskell-platform-doc libghc-glut-doc libghc-gtk3-dev libghc-gtk3-doc libghc-gtk-dev libghc-gtk-doc libghc-hdbc-postgresql-doc libghc-hdbc-postgresql-dev libghc-hdbc-sqlite3-dev libghc-hdbc-sqlite3-doc libghc-hsp-dev libghc-hsp-doc libghc-http-dev libghc-http-doc libghc-opengl-dev libghc-opengl-doc pkg-haskell-tools
+
 # Python 3 venv 
 #
 # python3 -m venv alpha
@@ -104,9 +137,6 @@ apt-get install python3-dev python3-venv
 
 # Python 3 SQLAlchemy
 apt-get install python3-sqlalchemy python3-sqlalchemy-utils python3-psycopg2
-
-# To build GNU Smalltalk
-apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison
 
 # Node.js + Express development tools
 apt-get install nodejs nodejs-doc npm node-express node-express-generator
@@ -156,6 +186,11 @@ ln -vs /usr/share/gtk-doc/html/gulkan .
 ln -vs /usr/share/gtk-doc/html/gobject .
 ln -vs /usr/share/doc/libhsqldb-java/guide hsqldb
 ln -vs /usr/share/doc/hyperspec .
+ln -vs /home/asarch/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html rust
+ln -vs /usr/share/doc/haskell98-tutorial/html haskell98-tutorial
+ln -vs /usr/share/doc/haskell98-report/html haskell98-report
+ln -vs /usr/share/doc/ghc-doc .
+ln -vs /usr/share/doc/libghc-gtk3-doc/html ghc-gtk3
 
 # Habilitamos el soporte para Squeak
 cat <<END | sudo tee /etc/security/limits.d/squeak.conf
