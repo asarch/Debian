@@ -87,6 +87,9 @@ apt install swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x
 # Tcl/Tk
 apt install tkcon tcl8.6-doc tk8.6-doc tcl8.6-tdbc-postgres togl-demos
 
+# Documentacion de Haskell
+apt install haskell98-tutorial haskell-doc 
+
 # Python 3 venv 
 #
 # python3 -m venv alpha
@@ -234,7 +237,7 @@ apt install geany geany-plugins anjuta anjuta-extras
 apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison
 
 # Haskell
-apt install ghc ghc-doc haskell98-tutorial haskell-doc haskell-platform-doc
+apt install ghc ghc-doc haskell-platform-doc
 
 apt install libghc-glut-doc libghc-gtk3-dev libghc-gtk3-doc libghc-gtk-dev libghc-gtk-doc libghc-hdbc-postgresql-doc libghc-hdbc-postgresql-dev libghc-hdbc-sqlite3-dev libghc-hdbc-sqlite3-doc libghc-hsp-dev libghc-hsp-doc libghc-http-dev libghc-http-doc libghc-opengl-dev libghc-opengl-doc pkg-haskell-tools
 
@@ -263,6 +266,8 @@ ln -vs /usr/share/doc/gtkmm-documentation/tutorial/html gtkmm-tutorial
 ln -vs /usr/share/doc/libglfw3-dev/html libglfw3-dev
 ln -vs /usr/share/gtk-doc/html/gobject .
 ln -vs /usr/share/doc/hyperspec .
+ln -vs /usr/share/doc/haskell98-tutorial/html haskell98-tutorial .
+ln -vs /usr/share/doc/haskell98-report/html haskell98-report .
 ln -vs /home/asarch/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html rust
 
 #ln -vs /usr/share/gtk-doc/html/gulkan .
@@ -272,8 +277,6 @@ ln -vs /home/asarch/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc
 #ln -vs /usr/share/doc/libgtk2.0-doc/faq gtk2-faq
 #ln -vs /usr/share/doc/libgtk2.0-doc/tutorial gtk2-tutorial
 #ln -vs /usr/share/doc/libgtkmm-2.4-doc/reference/html gtkmm2
-#ln -vs /usr/share/doc/haskell98-tutorial/html haskell98-tutorial
-#ln -vs /usr/share/doc/haskell98-report/html haskell98-report
 #ln -vs /usr/share/doc/ghc-doc .
 #ln -vs /usr/share/doc/libghc-gtk3-doc/html ghc-gtk3
 
