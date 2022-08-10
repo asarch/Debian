@@ -280,8 +280,8 @@ ln -vs /usr/share/doc/haskell98-report/html haskell98-report .
 ln -vs /home/asarch/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html rust
 
 # Prolog
-mkdir prolog
-cd prolog/
+mkdir swi-prolog
+cd swi-prolog/
 ln -vs /usr/share/swi-prolog/doc/packages .
 ln -vs /usr/share/swi-prolog/doc/Manual manual
 
