@@ -82,7 +82,7 @@ apt-get install hyperspec sbcl #sbcl-doc sbcl-source
 apt install squeak-vm etoys etoys-doc sugar-etoys-activity
 
 # Prolog
-apt install swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x
+apt install swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x gprolog gprolog-doc
 
 # Tcl/Tk
 apt install tkcon tcl8.6-doc tk8.6-doc tcl8.6-tdbc-postgres togl-demos
