@@ -106,6 +106,15 @@ apt-get install python3-sqlalchemy python3-sqlalchemy-utils python3-psycopg2
 # Node.js + Express development tools
 apt-get install nodejs nodejs-doc npm node-express node-express-generator
 
+# Raku
+apt install moarvm nqp perl6 rakudo
+
+# Moose y LLVM
+apt install libmoose-perl llvm-11-doc llvm-11-examples
+
+# C++
+apt install c++-annotations-pdf
+
 #---------------------------------------------------------------------
 # Bases de datos
 #---------------------------------------------------------------------
@@ -172,7 +181,7 @@ apt install mplayer ffmpeg mpg123 sox libsox-fmt-all vorbis-tools
 apt install texinfo groff dblatex htmldoc gummi xmlcopyeditor docbook-xsl-ns
 
 # Editores
-apt install emacs emacs-common-non-dfsg vim vim-gtk3 vim-addon-manager vim-scripts
+apt install nvi emacs emacs-common-non-dfsg emacs-goodies-el vim vim-gtk3 vim-addon-manager vim-scripts
 
 # Para imprimir con Epson L310
 apt-get install printer-driver-all printer-driver-cups-pdf foomatic-db-engine openprinting-ppds
@@ -269,6 +278,12 @@ ln -vs /usr/share/doc/hyperspec .
 ln -vs /usr/share/doc/haskell98-tutorial/html haskell98-tutorial .
 ln -vs /usr/share/doc/haskell98-report/html haskell98-report .
 ln -vs /home/asarch/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html rust
+
+# Prolog
+mkdir prolog
+cd prolog/
+ln -vs /usr/share/swi-prolog/doc/packages .
+ln -vs /usr/share/swi-prolog/doc/Manual manual
 
 #ln -vs /usr/share/gtk-doc/html/gulkan .
 #ln -vs /usr/share/doc/libhsqldb-java/guide hsqldb
