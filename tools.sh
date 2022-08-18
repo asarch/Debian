@@ -115,6 +115,39 @@ apt install libmoose-perl llvm-11-doc llvm-11-examples
 # C++
 apt install c++-annotations-pdf
 
+# GNU Smalltalk
+
+# Mejor usa la version compilada
+#apt-get install gnu-smalltalk gnu-smalltalk-browser gnu-smalltalk-doc gnu-smalltalk-el
+#apt-cache search smalltalk | awk '{print $1 }' | grep '\-gst' | xargs apt install
+apt install gnu-smalltalk gnu-smalltalk-doc gnu-smalltalk-browser libgdbm-gst libncurses-gst libpostgresql-gst libsdl-gst libsdl-image-gst libsdl-mixer-gst libsdl-sound-gst libsqlite3-gst libgl-gst libgtk2-gst
+
+# To build GNU Smalltalk
+
+#!/bin/sh
+# Obtenemos el codigo fuente
+# git clone git://git.sv.gnu.org/smalltalk.git
+# Iniciamos la configuracion
+# cd smalltalk
+# Corregimos el problema del punto flotante:
+# export CFLAGS='-no-pie'
+# export LDFLAGS='-no-pie'
+# echo "Autoreconf"
+# echo
+# autoreconf -vi > _autoreconf.log 2>&1
+# echo "Configure"
+# echo
+#./configure --verbose --enable-gtk=yes --enable-glibtest --enable-threads=posix > _configure.log 2>&1
+# ./configure --verbose --enable-gtk=blox --enable-glibtest --enable-threads=posix > _configure.log 2>&1
+# echo "Compilation"
+# echo
+# make > _make.log 2>&1
+# echo "Checking"
+# echo
+# make check > _check.log 2>&1
+# make install > _instalacion.log 2>&1
+apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison
+
 #---------------------------------------------------------------------
 # Bases de datos
 #---------------------------------------------------------------------
@@ -212,38 +245,6 @@ apt install glade
 
 # IDE
 apt install geany geany-plugins anjuta anjuta-extras
-
-# GNU Smalltalk
-
-# Mejor usa la version compilada
-#apt-get install gnu-smalltalk gnu-smalltalk-browser gnu-smalltalk-doc gnu-smalltalk-el
-#apt-cache search smalltalk | awk '{print $1 }' | grep '\-gst' | xargs apt install
-
-# To build GNU Smalltalk
-
-#!/bin/sh
-# Obtenemos el codigo fuente
-# git clone git://git.sv.gnu.org/smalltalk.git
-# Iniciamos la configuracion
-# cd smalltalk
-# Corregimos el problema del punto flotante:
-# export CFLAGS='-no-pie'
-# export LDFLAGS='-no-pie'
-# echo "Autoreconf"
-# echo
-# autoreconf -vi > _autoreconf.log 2>&1
-# echo "Configure"
-# echo
-#./configure --verbose --enable-gtk=yes --enable-glibtest --enable-threads=posix > _configure.log 2>&1
-# ./configure --verbose --enable-gtk=blox --enable-glibtest --enable-threads=posix > _configure.log 2>&1
-# echo "Compilation"
-# echo
-# make > _make.log 2>&1
-# echo "Checking"
-# echo
-# make check > _check.log 2>&1
-# make install > _instalacion.log 2>&1
-apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison
 
 # Haskell
 apt install ghc ghc-doc haskell-platform-doc
