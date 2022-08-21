@@ -117,12 +117,10 @@ apt install c++-annotations-pdf
 
 # GNU Smalltalk
 
-# Mejor usa la version compilada
-#apt-get install gnu-smalltalk gnu-smalltalk-browser gnu-smalltalk-doc gnu-smalltalk-el
-#apt-cache search smalltalk | awk '{print $1 }' | grep '\-gst' | xargs apt install
-apt install gnu-smalltalk gnu-smalltalk-doc gnu-smalltalk-browser libgdbm-gst libncurses-gst libpostgresql-gst libsdl-gst libsdl-image-gst libsdl-mixer-gst libsdl-sound-gst libsqlite3-gst libgl-gst libgtk2-gst
-
 # To build GNU Smalltalk
+
+apt install libgtk2.0-dev libgtk2.0-doc freeglut3-dev tcl8.6-dev tk8.6-dev
+apt install cmake libsigsegv-dev flex bison libreadline-dev libsqlite3-dev libgdbm-dev 
 
 #!/bin/sh
 # Obtenemos el codigo fuente
@@ -130,23 +128,23 @@ apt install gnu-smalltalk gnu-smalltalk-doc gnu-smalltalk-browser libgdbm-gst li
 # Iniciamos la configuracion
 # cd smalltalk
 # Corregimos el problema del punto flotante:
-# export CFLAGS='-no-pie'
-# export LDFLAGS='-no-pie'
+export CFLAGS='-no-pie'
+export LDFLAGS='-no-pie'
 # echo "Autoreconf"
 # echo
 # autoreconf -vi > _autoreconf.log 2>&1
 # echo "Configure"
 # echo
-#./configure --verbose --enable-gtk=yes --enable-glibtest --enable-threads=posix > _configure.log 2>&1
+# ./configure --verbose --enable-gtk=yes --enable-glibtest --enable-threads=posix > _configure.log 2>&1
 # ./configure --verbose --enable-gtk=blox --enable-glibtest --enable-threads=posix > _configure.log 2>&1
+./configure --verbose --enable-threads=POSIX --enable-gtk=no --disable-glibtest --disable-gtktest --with-tcl --with-tk --without-x > _configuracion.log 2>&1
 # echo "Compilation"
 # echo
-# make > _make.log 2>&1
+make > _make.log 2>&1
 # echo "Checking"
 # echo
-# make check > _check.log 2>&1
-# make install > _instalacion.log 2>&1
-apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison
+make check > _check.log 2>&1
+make install > _instalacion.log 2>&1
 
 #---------------------------------------------------------------------
 # Bases de datos
