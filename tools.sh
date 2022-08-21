@@ -130,6 +130,7 @@ apt install cmake libsigsegv-dev flex bison libreadline-dev libsqlite3-dev libgd
 # Corregimos el problema del punto flotante:
 export CFLAGS='-no-pie'
 export LDFLAGS='-no-pie'
+export CPPFLAGS='-DUSE_INTERP_RESULT'
 # echo "Autoreconf"
 # echo
 # autoreconf -vi > _autoreconf.log 2>&1
@@ -137,6 +138,7 @@ export LDFLAGS='-no-pie'
 # echo
 # ./configure --verbose --enable-gtk=yes --enable-glibtest --enable-threads=posix > _configure.log 2>&1
 # ./configure --verbose --enable-gtk=blox --enable-glibtest --enable-threads=posix > _configure.log 2>&1
+# ./configure --verbose --enable-gtk=blox --enable-glibtest --enable-threads=posix --with-tcl=/usr/lib/tcl8.6 --with-tk=/usr/lib/tk8.6 > _configuracion.log 2>&1
 ./configure --verbose --enable-threads=POSIX --enable-gtk=no --disable-glibtest --disable-gtktest --with-tcl --with-tk --without-x > _configuracion.log 2>&1
 # echo "Compilation"
 # echo
