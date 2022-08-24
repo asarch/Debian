@@ -88,7 +88,7 @@ apt install swi-prolog swi-prolog-doc swi-prolog-bdb swi-prolog-x gprolog gprolo
 apt install tkcon tcl8.6-doc tk8.6-doc tcl8.6-tdbc-postgres togl-demos
 
 # Documentacion de Haskell
-apt install haskell98-tutorial haskell-doc 
+apt install haskell98-tutorial
 
 # Python 3 venv 
 #
@@ -196,7 +196,7 @@ apt-get install hsqldb-utils libhsqldb-java libhsqldb-java-doc
 apt-get install gnome-boxes epiphany-browser 
 
 # GNOME Office
-apt install abiword gnucash gnumeric gnumeric-plugins-extra ttf-mscorefonts-installer
+apt install abiword gnucash grisbi homebank gnumeric gnumeric-plugins-extra ttf-mscorefonts-installer
 
 # IRC
 apt install hexchat hexchat-plugins alice irssi irssi-plugin-otr irssi-plugin-robustirc irssi-plugin-xmpp irssi-scripts
@@ -231,7 +231,6 @@ apt-get install samba
 
 # Libs
 apt install freeglut3 freeglut3-dev
-
 apt install libsdl1.2-dev libgtk2.0-doc libgtkmm-2.4-doc gtk2.0-examples
 
 # Vulkan
@@ -248,7 +247,6 @@ apt install geany geany-plugins anjuta anjuta-extras
 
 # Haskell
 apt install ghc ghc-doc haskell-platform-doc
-
 apt install libghc-glut-doc libghc-gtk3-dev libghc-gtk3-doc libghc-gtk-dev libghc-gtk-doc libghc-hdbc-postgresql-doc libghc-hdbc-postgresql-dev libghc-hdbc-sqlite3-dev libghc-hdbc-sqlite3-doc libghc-hsp-dev libghc-hsp-doc libghc-http-dev libghc-http-doc libghc-opengl-dev libghc-opengl-doc pkg-haskell-tools
 
 # Lazarus
