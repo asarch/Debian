@@ -188,6 +188,9 @@ apt-get install libreoffice-base libreoffice-base-drivers libreoffice-evolution 
 # Usa esta direccion: jdbc:hsqldb:hsql://localhost/taco;default_schema=true
 apt-get install hsqldb-utils libhsqldb-java libhsqldb-java-doc
 
+# Firebird
+apt install firebird3.0-server firebird3.0-utils flamerobin firebird3.0-doc firebird3.0-common-doc firebird3.0-examples
+
 #---------------------------------------------------------------------
 # Utilerias
 #---------------------------------------------------------------------
