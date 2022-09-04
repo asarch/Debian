@@ -166,7 +166,7 @@ apt-get install pgadmin4
 /usr/pgadmin4/bin/setup-web.sh
 
 # MariaDB
-apt install mariadb-backup mariadb-client mariadb-server phpmyadmin
+apt install mariadb-backup mariadb-client mariadb-server phpmyadmin libapache2-mod-php
 
 # SQLite3
 apt install sqlite3 sqlite3-doc phpliteadmin phpliteadmin-themes
