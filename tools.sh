@@ -46,8 +46,11 @@ apt-get install amd64-microcode firmware-realtek firmware-amd-graphics firmware-
 # Checa la página sugerida para más información
 apt-get install intel-microcode firmware-misc-nonfree firmware-realtek firmware-b43-installer
 
+# Compiler tools
+apt-get install build-essential
+
 # Virt-Manager
-apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass-gnome
+apt-get install virt-manager qemu-utils bridge-utils ssh-askpass-gnome
 
 # Xen
 #
@@ -153,7 +156,7 @@ make install > _instalacion.log 2>&1
 #---------------------------------------------------------------------
 
 # PostgreSQL
-export PG_VER=14
+export PG_VER=15
 apt-get install postgresql-$PG_VER postgresql-client-$PG_VER postgresql-doc-$PG_VER postgresql-server-dev-$PG_VER
 
 # PgAdmin4, from: https://www.pgadmin.org/download/pgadmin-4-apt/
@@ -242,7 +245,7 @@ apt install vulkan-tools libgulkan-dev libgulkan-doc libgulkan-utils libglfw3-de
 # librep
 apt install rep rep-doc rep-gtk 
 
-# Glade
+  # Glade
 apt install glade
 
 # IDE
@@ -268,17 +271,17 @@ apt install audacious audacious-plugins youtubedl-gui
 
 # Habilitamos la documentación local
 cd /var/www/html
-ln -vs /usr/share/doc/postgresql-doc-14/html postgresql
+ln -vs /usr/share/doc/postgresql-doc-15/html postgresql
 ln -vs /usr/share/doc/xen/html xen
 ln -vs /usr/share/gtk-doc/html/gdk3 .
 ln -vs /usr/share/gtk-doc/html/gtk3 .
 ln -vs /usr/share/doc/libgtkmm-3.0-doc/reference/html gtkmm3
 ln -vs /usr/share/doc/gtkmm-documentation/tutorial/html gtkmm-tutorial
-ln -vs /usr/share/doc/libglfw3-dev/html libglfw3-dev
+ln -vs /usr/share/doc/libglfw3-dev/html glfw
 ln -vs /usr/share/gtk-doc/html/gobject .
 ln -vs /usr/share/doc/hyperspec .
-ln -vs /usr/share/doc/haskell98-tutorial/html haskell98-tutorial .
-ln -vs /usr/share/doc/haskell98-report/html haskell98-report .
+ln -vs /usr/share/doc/haskell98-tutorial/html haskell98-tutorial
+ln -vs /usr/share/doc/haskell98-report/html haskell98-report
 ln -vs /home/asarch/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/share/doc/rust/html rust
 
 # Prolog
@@ -294,8 +297,18 @@ ln -vs /usr/share/swi-prolog/doc/Manual manual
 #ln -vs /usr/share/doc/libgtk2.0-doc/faq gtk2-faq
 #ln -vs /usr/share/doc/libgtk2.0-doc/tutorial gtk2-tutorial
 #ln -vs /usr/share/doc/libgtkmm-2.4-doc/reference/html gtkmm2
+
+# Haskell documentation
+
+# Si usas los paquetes de Debian:
 #ln -vs /usr/share/doc/ghc-doc .
 #ln -vs /usr/share/doc/libghc-gtk3-doc/html ghc-gtk3
+
+# Si usas el instalador de la página:
+# https://www.haskell.org/
+# https://www.haskell.org/ghcup/
+# curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+ln -vs /home/asarch/.ghcup/ghc/9.2.5/share/doc/ghc-9.2.5/html ghc
 
 # Habilitamos el soporte para Squeak
 cat <<END | sudo tee /etc/security/limits.d/squeak.conf
