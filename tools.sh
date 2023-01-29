@@ -95,9 +95,9 @@ apt install haskell98-tutorial
 
 # Python 3 venv 
 #
-# python3 -m venv alpha
-# source ~/alpha/bin/activate
-# pip --verbose install tg.devtools flask flask-admin flask-sqlacodegen flask-sqlalchemy psycopg2 django django-extensions
+# python3 -m venv ~/Projects/alpha
+# source ~/Projects/alpha/bin/activate
+# pip --verbose install tg.devtools flask flask-admin flask-sqlacodegen flask-sqlalchemy psycopg2 django django-extensions openai
 # flask-sqlacodegen 'orbm://username:password@hostname/table' > model.py
 # deactivate
 #
