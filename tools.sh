@@ -116,7 +116,7 @@ apt install moarvm nqp perl6 rakudo
 apt install libmoose-perl llvm-11-doc llvm-11-examples
 
 # C++
-apt install c++-annotations-pdf
+apt install c++-annotations c++-annotations-contrib c++-annotations-dvi c++-annotations-html c++-annotations-latex c++-annotations-pdf c++-annotations-ps c++-annotations-txt
 
 # GNU Smalltalk
 
