@@ -11,7 +11,7 @@ deb http://deb-multimedia.org stable main non-free
 ## From: https://wiki.postgresql.org/wiki/Apt
 # sudo apt install curl ca-certificates gnupg
 # curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg >/dev/null
-# echo "deb http://apt.postgresql.org/pub/repos/apt buster-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+# echo "deb http://apt.postgresql.org/pub/repos/apt bookworm-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 
 # From jelly@#debian.FN
 deb http://httpredir.debian.org/debian/ bookworm main contrib non-free-firmware
