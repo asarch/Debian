@@ -1,5 +1,7 @@
+# deb cdrom:[Debian GNU/Linux 12.0.0 _Bookworm_ - Official amd64 DVD Binary-1 with firmware 20230610-10:23]/ bookworm main non-free-firmware
+
 ## Backports
-deb http://http.debian.net/debian bullseye-backports main
+deb http://http.debian.net/debian bookworm-backports main
 
 ## Repositorio de multimedia
 ## wget http://deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
@@ -7,13 +9,13 @@ deb http://deb-multimedia.org stable main non-free
 
 ## PostgreSQL
 ## From: https://wiki.postgresql.org/wiki/Apt
-## wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
-## aptitude -y install postgresql postgresql-client postgresql-contrib postgresql-doc pgAdmin3 phpPgAdmin
-deb http://apt.postgresql.org/pub/repos/apt/ bullseye-pgdg main
+# sudo apt install curl ca-certificates gnupg
+# curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg >/dev/null
+# echo "deb http://apt.postgresql.org/pub/repos/apt buster-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 
 # From jelly@#debian.FN
-deb http://httpredir.debian.org/debian/ bullseye main contrib non-free
-deb http://httpredir.debian.org/debian/ bullseye-updates main contrib non-free
+deb http://httpredir.debian.org/debian/ bookworm main contrib non-free-firmware
+deb http://httpredir.debian.org/debian/ bookworm-updates main contrib non-free-firmware
 
 # From: https://www.debian.org/releases/stable/errata.html
-deb http://security.debian.org/debian-security bullseye-security main contrib non-free
+deb http://security.debian.org/debian-security bookworm-security main contrib non-free-firmware
