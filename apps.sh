@@ -35,3 +35,6 @@ sudo apt install pgadmin4-web
 
 # Configure the webserver, if you installed pgadmin4-web:
 sudo /usr/pgadmin4/bin/setup-web.sh
+
+# Tcl/Tk
+apt install tk8.6 tk8.6-doc tcl8.6-tdbc tcl8.6-tdbc-mysql tcl8.6-tdbc-odbc tcl8.6-tdbc-postgres tcl8.6-tdbc-sqlite3
