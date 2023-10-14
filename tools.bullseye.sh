@@ -122,8 +122,10 @@ apt install c++-annotations c++-annotations-contrib c++-annotations-dvi c++-anno
 
 # To build GNU Smalltalk
 
+apt install libcanberra-gtk-module libgtk-3-doc libgtkmm-3.0-doc gtk-3-examples
 apt install libgtk2.0-dev libgtk2.0-doc freeglut3-dev tcl8.6-dev tk8.6-dev
-apt install cmake libsigsegv-dev flex bison libreadline-dev libsqlite3-dev libgdbm-dev 
+apt install cmake libsigsegv-dev flex bison libreadline-dev libsqlite3-dev libgdbm-dev
+apt install gawk zip texinfo
 
 #!/bin/sh
 # Obtenemos el codigo fuente
