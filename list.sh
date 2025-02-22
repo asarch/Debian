@@ -7,6 +7,19 @@
 #  así desde la memoria para que puedas particionar con el programa
 #  de instalacion.
 #
+# Actualizacion (22/feb/2025)
+#
+# Ahora solamente necesitamos en UEFI:
+#
+#  EFI   - 256 MB
+#  /boot - 256 MB
+#  LVM   - $
+#
+#  De los cuales:
+#
+#  EFI   - Debian solamente usa 5.9MB
+#  /boot - Debian solamente usa 120M
+#
 #  +---+
 #  |   |  BIOSBOOT - 1 MB      <- Esta partición realmente no es necesaria a menos que uses BIOS
 #  +---+
