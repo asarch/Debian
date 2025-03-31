@@ -175,4 +175,7 @@ apt \
 	audacious \
 	audacious-plugins \
 	info \
-	emacs-common-non-dfsg
+	emacs-common-non-dfsg \
+ 	gambas3 gambas3-examples \
+ 	openvpn network-manager-openvpn
+ 
