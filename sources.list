@@ -4,7 +4,7 @@
 deb http://http.debian.net/debian bookworm-backports main
 
 ## Repositorio de multimedia
-## wget http://deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb
+## wget http://deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2024.9.1_all.deb
 deb http://deb-multimedia.org stable main non-free
 
 ## PostgreSQL
