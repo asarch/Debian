@@ -92,7 +92,7 @@ apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass
 # echo
 # make check > _check.log 2>&1
 # make install > _instalacion.log 2>&1
-apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison gawk zip tcl8.6-dev tk8.6-dev tcl-tclreadline tcl8.6-doc tk8.6-doc
+apt-get install libgtk2.0-dev libgtk2.0-doc libreadline-dev freeglut3-dev cmake libsigsegv-dev flex bison gawk zip tcl8.6-dev tk8.6-dev tcl-tclreadline tcl8.6-doc tk8.6-doc texinfo
 
 # SBCL
 # Solamente necesitas el binario para compilar la nueva versión
