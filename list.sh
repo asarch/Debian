@@ -76,6 +76,7 @@ apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass
 # Corregimos el problema del punto flotante:
 # export CFLAGS='-no-pie'
 # export LDFLAGS='-no-pie'
+# export CPPFLAGS='-DUSE_INTERP_RESULT'
 # echo "Autoreconf"
 # echo
 # autoreconf -vi > _autoreconf.log 2>&1
