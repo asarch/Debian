@@ -85,7 +85,8 @@ apt-get install build-essential virt-manager qemu-utils bridge-utils ssh-askpass
 #./configure --verbose --enable-gtk=yes --enable-glibtest --enable-threads=posix > _configure.log 2>&1
 # ./configure --verbose --enable-gtk=blox --enable-glibtest --enable-threads=posix > _configure.log 2>&1
 # ./configure --verbose --enable-gtk=blox --enable-glibtest --enable-threads=posix --with-tk=/usr/lib/tk8.6 --with-tcl=/usr/lib/tcl8.6 > _configure.log 2>&1
-# ./configure --verbose --enable-gtk=blox --enable-glibtest --enable-threads=posix --with-tk=/usr/lib64/tk8.6 --with-tcl=/usr/lib64/tcl8.6 > _configure.log 2>&1
+# For Slackware 64
+# ./configure --verbose --enable-gtk=blox --enable-glibtest --enable-threads=posix --with-tk=/usr/lib64 --with-tcl=/usr/lib64 > _configure.log 2>&1
 # echo "Compilation"
 # echo
 # make > _make.log 2>&1
