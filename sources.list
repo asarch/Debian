@@ -9,9 +9,8 @@ deb http://deb-multimedia.org stable main non-free
 
 ## PostgreSQL
 ## From: https://wiki.postgresql.org/wiki/Apt
-# sudo apt install curl ca-certificates gnupg
-# curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/apt.postgresql.org.gpg >/dev/null
-# echo "deb http://apt.postgresql.org/pub/repos/apt bookworm-pgdg main" > /etc/apt/sources.list.d/pgdg.list
+# sudo apt install -y postgresql-common
+# sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
 
 # From jelly@#debian.FN
 deb http://httpredir.debian.org/debian/ trixie main contrib non-free-firmware
