@@ -177,5 +177,6 @@ apt \
 	info \
 	emacs-common-non-dfsg \
  	gambas3 gambas3-examples \
- 	openvpn network-manager-openvpn
+ 	openvpn network-manager-openvpn \
+    openjdk-17-doc openjdk-17-demo openjdk-17-jdk
  
