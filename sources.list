@@ -1,7 +1,7 @@
 # deb cdrom:[Debian GNU/Linux 12.0.0 _Bookworm_ - Official amd64 DVD Binary-1 with firmware 20230610-10:23]/ bookworm main non-free-firmware
 
 ## Backports
-deb http://http.debian.net/debian bookworm-backports main
+deb http://http.debian.net/debian trixie-backports main
 
 ## Repositorio de multimedia
 ## wget http://deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2024.9.1_all.deb
@@ -14,11 +14,11 @@ deb http://deb-multimedia.org stable main non-free
 # echo "deb http://apt.postgresql.org/pub/repos/apt bookworm-pgdg main" > /etc/apt/sources.list.d/pgdg.list
 
 # From jelly@#debian.FN
-deb http://httpredir.debian.org/debian/ bookworm main contrib non-free-firmware
-deb http://httpredir.debian.org/debian/ bookworm-updates main contrib non-free-firmware
+deb http://httpredir.debian.org/debian/ trixie main contrib non-free-firmware
+deb http://httpredir.debian.org/debian/ trixie-updates main contrib non-free-firmware
 
 # From: https://www.debian.org/releases/stable/errata.html
-deb http://security.debian.org/debian-security bookworm-security main contrib non-free-firmware
+deb http://security.debian.org/debian-security trixie-security main contrib non-free-firmware
 
 # For emacs manual
 deb http://http.us.debian.org/debian stable main non-free
