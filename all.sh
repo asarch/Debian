@@ -1,182 +1,298 @@
 #!/bin/sh
 
-apt \
-	install \
-	build-essential \
-	virt-manager \
-	qemu-utils \
-	bridge-utils \
-	ssh-askpass-gnome \
-	xen-hypervisor-4.17-amd64 \
-	xen-utils-4.17 \
-	xen-doc \
-	xen-tools \
-	mc \
-	git \
-	lynx \
-	apt-file \
-	aptitude \
-	rtorrent \
-	tmux \
-	jigdo-file \
-	curl \
-	ntpdate \
-	tree \
-	unrar-free \
-	squeak-vm \
-	mariadb-backup \
-	mariadb-client \
-	mariadb-server \
-	phpmyadmin \
-	libapache2-mod-php \
-	sqlite3 \
-	sqlite3-doc \
-	phpliteadmin \
-	phpliteadmin-themes \
-	sqlitebrowser \
-	libreoffice-base \
-	libreoffice-base-drivers \
-	libreoffice-evolution \
-	libreoffice-report-builder \
-	libreoffice-script-provider-python \
-	libreoffice-script-provider-js \
-	libreoffice-sdbc-hsqldb \
-	libreoffice-sdbc-mysql \
-	openclipart \
-	openclipart-libreoffice \
-	openclipart-png \
-	openclipart-svg \
-	gnome-boxes \
-	epiphany-browser \
-	abiword \
-	gnucash \
-	grisbi \
-	homebank \
-	gnumeric \
-	gnumeric-plugins-extra \
-	ttf-mscorefonts-installer \
-	hexchat \
-	hexchat-plugins \
-	alice \
-	irssi \
-	irssi-plugin-otr \
-	irssi-plugin-xmpp \
-	irssi-scripts \
-	geeqie \
-	inkscape \
-	inkscape-open-symbols \
-	inkscape-tutorials \
-	gimp \
-	gimp-gutenprint \
-	dia \
-	dia2code \
-	bluefish \
-	bluefish-plugins \
-	gnome-builder \
-	mplayer \
-	ffmpeg \
-	mpg123 \
-	sox \
-	libsox-fmt-all \
-	vorbis-tools \
-	texinfo \
-	groff \
-	dblatex \
-	htmldoc \
-	gummi \
-	xmlcopyeditor \
-	docbook-xsl-ns \
-	nvi \
-	emacs \
-	emacs-goodies-el \
-	vim \
-	vim-gtk3 \
-	vim-addon-manager \
-	vim-scripts \
-	printer-driver-all \
-	printer-driver-cups-pdf \
-	foomatic-db-engine \
-	openprinting-ppds \
-	hplip \
-	glade \
-	libreoffice-sdbc-postgresql \
-	blender \
-	sbcl \
-	sbcl-doc \
-	sbcl-source \
-	thunderbird \
-	tk8.6 \
-	tk8.6-doc \
-	tcl8.6-tdbc \
-	tcl8.6-tdbc-mysql \
-	tcl8.6-tdbc-odbc \
-	tcl8.6-tdbc-postgres \
-	tcl8.6-tdbc-sqlite3 \
-	libcanberra-gtk-module \
-	libgtk-3-doc \
-	libgtkmm-3.0-doc \
-	gtk-3-examples \
-	swi-prolog \
-	swi-prolog-doc \
-	swi-prolog-bdb \
-	swi-prolog-x \
-	gprolog \
-	gprolog-doc \
-	tkcon \
-	tcl8.6-doc \
-	tk8.6-doc \
-	tcl8.6-tdbc-postgres \
-	togl-demos \
-	python3-dev \
-	python3-venv \
-	python3-sqlalchemy \
-	python3-sqlalchemy-utils \
-	python3-psycopg2 \
-	moarvm \
-	nqp \
-	perl6 \
-	rakudo \
-	c++-annotations \
-	c++-annotations-contrib \
-	c++-annotations-dvi \
-	c++-annotations-html \
-	c++-annotations-latex \
-	c++-annotations-pdf \
-	c++-annotations-ps \
-	c++-annotations-txt \
-	libcanberra-gtk-module \
-	libgtk-3-doc \
-	libgtkmm-3.0-doc \
-	gtk-3-examples \
-	libgtk2.0-dev \
-	libgtk2.0-doc \
-	freeglut3-dev \
-	tcl8.6-dev \
-	tk8.6-dev \
-	cmake \
-	libsigsegv-dev \
-	flex \
-	bison \
-	libreadline-dev \
-	libsqlite3-dev \
-	libgdbm-dev \
-	gawk \
-	zip \
-	texinfo \
-	firebird3.0-server \
-	firebird3.0-utils \
-	flamerobin \
-	firebird3.0-doc \
-	firebird3.0-common-doc \
-	firebird3.0-examples \
-	maxima \
-	maxima-doc \
-	wxmaxima \
-	audacious \
-	audacious-plugins \
-	info \
-	emacs-common-non-dfsg \
- 	gambas3 gambas3-examples \
- 	openvpn network-manager-openvpn \
-    openjdk-17-doc openjdk-17-demo openjdk-17-jdk
- 
+apt install \
+build-essential \
+virt-manager \
+qemu-utils \
+qemu-system-riscv \
+bridge-utils \
+ssh-askpass-gnome \
+xen-hypervisor-4.20-amd64 \
+xen-utils-4.20 \
+xen-doc \
+mc \
+git \
+lynx \
+apt-file \
+aptitude \
+rtorrent \
+tmux \
+jigdo-file \
+curl \
+tree \
+unrar-free \
+mariadb-backup \
+mariadb-client \
+mariadb-server \
+phpmyadmin \
+libapache2-mod-php \
+sqlite3 \
+sqlite3-doc \
+phpliteadmin \
+phpliteadmin-themes \
+sqlitebrowser \
+libreoffice-base \
+libreoffice-base-drivers \
+libreoffice-evolution \
+libreoffice-report-builder \
+libreoffice-script-provider-python \
+libreoffice-script-provider-js \
+libreoffice-sdbc-hsqldb \
+libreoffice-sdbc-mysql \
+libreoffice-sdbc-postgresql \
+libreoffice-gtk4 \
+openclipart \
+openclipart-libreoffice \
+openclipart-png \
+openclipart-svg \
+gnome-boxes \
+epiphany-browser \
+abiword \
+gnucash \
+grisbi \
+homebank \
+gnumeric \
+gnumeric-plugins-extra \
+ttf-mscorefonts-installer \
+hexchat \
+hexchat-plugins \
+alice \
+irssi \
+irssi-plugin-otr \
+irssi-plugin-xmpp \
+irssi-scripts \
+geeqie \
+inkscape \
+inkscape-open-symbols \
+inkscape-tutorials \
+gimp \
+dia \
+dia2code \
+bluefish \
+bluefish-plugins \
+gnome-builder \
+mplayer \
+ffmpeg \
+mpg123 \
+sox \
+libsox-fmt-all \
+vorbis-tools \
+texinfo \
+groff \
+dblatex \
+htmldoc \
+gummi \
+xmlcopyeditor \
+docbook-xsl-ns \
+nvi \
+emacs \
+emacs-common-non-dfsg \
+emacs-goodies-el \
+vim \
+vim-gtk3 \
+vim-addon-manager \
+vim-scripts \
+printer-driver-all \
+printer-driver-cups-pdf \
+foomatic-db-engine \
+openprinting-ppds \
+hplip \
+glade \
+blender \
+sbcl \
+sbcl-doc \
+sbcl-source \
+thunderbird \
+tcl-tclreadline \
+tcl8.6 \
+tcl8.6-doc \
+tcl8.6-dev \
+tcl8.6-tdbc \
+tcl8.6-tdbc-mysql \
+tcl8.6-tdbc-odbc \
+tcl8.6-tdbc-postgres \
+tcl8.6-tdbc-sqlite3 \
+tcl8.6-tdbc-postgres \
+togl-demos \
+tk8.6 \
+tk8.6-doc \
+tk8.6-dev \
+tk8.6-blt2.5 \
+tkcon \
+libgtk-3-doc \
+libgtkmm-3.0-doc \
+swi-prolog \
+swi-prolog-doc \
+swi-prolog-bdb \
+swi-prolog-x \
+gprolog \
+gprolog-doc \
+togl-demos \
+python3-dev \
+python3-venv \
+python3-sqlalchemy \
+python3-sqlalchemy-utils \
+python3-psycopg2 \
+moarvm \
+nqp \
+perl6 \
+rakudo \
+c++-annotations \
+c++-annotations-contrib \
+c++-annotations-dvi \
+c++-annotations-html \
+c++-annotations-latex \
+c++-annotations-pdf \
+c++-annotations-ps \
+c++-annotations-txt \
+gtk-3-examples \
+libgtk-3-doc \
+libgtkmm-3.0-doc \
+gtk-4-examples \
+libgtkmm-4.0-doc \
+gtk4-layer-shell-doc \
+gtk4-layer-shell-examples \
+libgtk2.0-dev \
+libgtk2.0-doc \
+freeglut3-dev \
+cmake \
+libsigsegv-dev \
+flex \
+bison \
+libreadline-dev \
+libsqlite3-dev \
+libgdbm-dev \
+gawk \
+zip \
+texinfo \
+firebird3.0-server \
+firebird3.0-utils \
+firebird3.0-doc \
+firebird3.0-common-doc \
+firebird3.0-examples \
+flamerobin \
+maxima \
+maxima-doc \
+wxmaxima \
+audacious \
+audacious-plugins \
+openjdk-21-doc \
+openjdk-21-demo \
+openjdk-21-jdk \
+mksh \
+jupp \
+joe-jupp \
+youtube-dl \
+youtubedl-gui \
+yt-dlp \
+gambas3 \
+gambas3-examples \
+gambas3-gb-data \
+gambas3-gb-db \
+gambas3-gb-db-form \
+gambas3-gb-db-mysql \
+gambas3-gb-db-odbc \
+gambas3-gb-db-postgresql \
+gambas3-gb-db-sqlite3 \
+gambas3-gb-db2 \
+gambas3-gb-db2-form \
+gambas3-gb-db2-mysql \
+gambas3-gb-db2-odbc \
+gambas3-gb-db2-postgresql \
+gambas3-gb-db2-sqlite3 \
+gambas3-gb-desktop \
+gambas3-gb-desktop-x11 \
+gambas3-gb-eval-highlight \
+gambas3-gb-form \
+gambas3-gb-form-dialog \
+gambas3-gb-form-editor \
+gambas3-gb-form-htmlview \
+gambas3-gb-form-mdi \
+gambas3-gb-form-print \
+gambas3-gb-form-stock \
+gambas3-gb-form-terminal \
+gambas3-gb-gsl \
+gambas3-gb-gtk3 \
+gambas3-gb-gtk3-opengl \
+gambas3-gb-gtk3-wayland \
+gambas3-gb-gtk3-webview \
+gambas3-gb-gtk3-x11 \
+gambas3-gb-gui \
+gambas3-gb-hash \
+gambas3-gb-highlight \
+gambas3-gb-httpd \
+gambas3-gb-image \
+gambas3-gb-image-effect \
+gambas3-gb-image-imlib \
+gambas3-gb-image-io \
+gambas3-gb-inotify \
+gambas3-gb-jit \
+gambas3-gb-libxml \
+gambas3-gb-logging \
+gambas3-gb-map \
+gambas3-gb-markdown \
+gambas3-gb-media \
+gambas3-gb-media-form \
+gambas3-gb-memcached \
+gambas3-gb-mime \
+gambas3-gb-mongodb \
+gambas3-gb-mysql \
+gambas3-gb-ncurses \
+gambas3-gb-net \
+gambas3-gb-net-curl \
+gambas3-gb-net-pop3 \
+gambas3-gb-net-smtp \
+gambas3-gb-openal \
+gambas3-gb-opengl \
+gambas3-gb-opengl-glsl \
+gambas3-gb-opengl-glu \
+gambas3-gb-opengl-sge \
+gambas3-gb-openssl \
+gambas3-gb-option \
+gambas3-gb-pcre \
+gambas3-gb-pdf \
+gambas3-gb-poppler \
+gambas3-gb-report \
+gambas3-gb-report2 \
+gambas3-gb-scanner \
+gambas3-gb-sdl2 \
+gambas3-gb-sdl2-audio \
+gambas3-gb-settings \
+gambas3-gb-signal \
+gambas3-gb-term \
+gambas3-gb-term-form \
+gambas3-gb-util \
+gambas3-gb-util-web \
+gambas3-gb-v4l \
+gambas3-gb-vb \
+gambas3-gb-web \
+gambas3-gb-web-feed \
+gambas3-gb-web-form \
+gambas3-gb-web-gui \
+gambas3-gb-xml \
+gambas3-gb-xml-html \
+gambas3-gb-xml-rpc \
+gambas3-gb-xml-xslt \
+gambas3-ide \
+gambas3-runtime \
+gambas3-scripter \
+lazarus \
+lazarus-doc \
+lazarus-ide \
+lazarus-ide-gtk2 \
+lazarus-src
+
+#tcl9.0 \
+#tcl9.0-dev \
+#tcl9.0-doc \
+#tcl9.0-thread \
+#tk9.0 \
+#tk9.0-dev \
+#tk9.0-doc \
+
+#firebird4.0-server \
+#firebird4.0-utils \
+#firebird4.0-doc \
+#firebird4.0-common-doc \
+#firebird4.0-examples \
+#btl-demo \
